@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutaal Khan Portfolio</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mutaal-khan.github.io/portfolio" />
+    <meta property="og:title" content="Mutaal Khan - Portfolio" />
+    <meta property="og:description" content="Hi, this is my portfolio..." />
+    <meta property="og:image" content="https://mutaal-khan.github.io/xE/src/images/meta-tags.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mutaal-khan.github.io/portfolio" />
+    <meta property="twitter:title" content="Mutaal Khan - Portfolio" />
+    <meta property="twitter:description" content="Hi, this is my portfolio..." />
+    <meta property="twitter:image" content="https://mutaal-khan.github.io/xE/src/images/meta-tags.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="stylesheet" href="./src/css/xTailwind.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body class="bg-black text-gray-400 text-md leading-normal tracking-wider overflow-x-hidden">
+    <!--
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+        >  |    Navigation                                                                                                           v1.0.0
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+    -->
+    <nav class="h-12 w-full absolute top-0 left-0 text-gray-300 flex justify-center items-center">
+        <div class="container px-5 flex items-center">
+            <h1 class="text-blue-400">Mutaal Khan</h1>
+        </div>
+    </nav>
+        
+
+    <!--
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+        >  |    Header                                                                                                               v1.0.0
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+     -->
+     <header class="flex flex-col justify-start items-center">
+        <div class="container relative w-full flex flex-col justify-center items-center flex-no-wrap" style="height: 100vh; min-height: 600px; max-height: 1000px;">
+            <!-- 
+                >> -------------------------------------------------------------------------------------------------------------------------------- <<
+                >  |    Morphing Text                                                                                                        v1.0.0
+                >> -------------------------------------------------------------------------------------------------------------------------------- <<
+            -->        
+            <div class="w-full py-32 flex justify-center items-center flex-col flex-no-wrap my-10">
+                <div class="container pb-20 flex justify-center items-center flex-col select-none">
+                    <!-- Morphing Text morphText.js -->
+                    <!-- The two texts -->
+                    <div class="h-max w-full relative text-center text-gray-100 font-qs font-extrabold tracking-wide text-5xl xl:text-6xl" style="filter: url(#threshold) blur(0.7px);">
+                        <span class="inline-block absolute w-full left-0 text-center" id="text-1"></span>
+                        <span class="inline-block absolute w-full left-0 text-center" id="text-2"></span>
+                    </div>
+                    <!-- The SVG filter used to create the merging effect -->
+                    <svg id="filters" class="hidden">
+                        <defs>
+                            <filter id="threshold">
+                                <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                                <feColorMatrix in="SourceGraphic"
+                                        type="matrix"
+                                        values="1 0 0 0 0
+                                                        0 1 0 0 0
+                                                        0 0 1 0 0
+                                                        0 0 0 255 -140" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <!-- Scroll Down -->
+            <div class="container max-w-3xl px-5 absolute bottom-5">
+                <div class="flex items-center flex-no-wrap gap-2">
+                    <div class="w-full"></div>
+                    <div class="w-full"></div>
+                    <div class="w-full"></div>
+                    <div class="w-full border-t border-gray-800"></div>
+                    <div class="flex items-center justify-center text-xs tracking-widest">
+                        <nobr>Please Scroll Down :)</nobr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+        >  |    Main                                                                                                                 v1.0.0
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+    -->
+
+    <main class="mt-10 flex flex-col justify-start items-center">
+        <div class="container max-w-3xl px-5 flex flex-col justify-center items-center flex-no-wrap">
+            <section class="w-full my-20">
+                <div class="flex items-center flex-wrap gap-5 sm:gap-10">
+                    <div class="relative overflow-hidden h-16 w-16 sm:h-24 sm:w-24 bg-blue-500 border-2 border-blue-400 rounded-full overflow-hidden flex items-center  justify-center">
+                        <!-- Avatar - if the profile pic does not be loaded. The svg will be displayed -->
+                        <svg class="absolute z-10 h-16 w-16 sm:h-24 sm:w-24 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M18 4c-3.666 0-6.446.862-8.313 2.625C7.822 8.388 7 10.958 7 14v.906C6.428 15.45 6 16.15 6 17c0 1.26.89 2.154 2 2.594c.37 1.167.773 2.393 1.22 3.437c.485 1.142.924 2.048 1.53 2.69a7.192 7.192 0 0 0 10.5 0c.606-.642 1.013-1.548 1.5-2.69c.446-1.044.88-2.27 1.25-3.436c1.11-.44 2-1.334 2-2.594c0-.846-.43-1.547-1-2.094V14c0-2.824-.643-4.834-1.78-6.156c-.966-1.12-2.255-1.58-3.532-1.72l-.782-1.56l-.28-.564H18zm-.594 2.063l.688 1.375c.333.666.463 1.14.468 1.343c.006.204.013.12-.03.158c-.087.073-.93.29-1.97.343c-1.04.054-2.264.028-3.406.47c-1.14.442-2.143 1.627-2.156 3.25h2c.008-.986.237-1.128.875-1.375c.638-.247 1.738-.32 2.813-.375c1.074-.055 2.183.01 3.125-.78c.47-.397.77-1.08.75-1.75c-.005-.148-.04-.29-.063-.44a3.23 3.23 0 0 1 1.188.876C22.413 10 23 11.482 23 14v1.844l.5.28c.304.177.5.496.5.876a.98.98 0 0 1-.906 1l-.688.03l-.187.657a37.548 37.548 0 0 1-1.282 3.532c-.45 1.056-.967 1.956-1.125 2.124c-2.13 2.25-5.497 2.25-7.625 0c-.16-.168-.675-1.068-1.126-2.125a37.86 37.86 0 0 1-1.28-3.532l-.188-.657l-.688-.03A.98.98 0 0 1 8 17c0-.374.193-.698.5-.875l.5-.28V14c0-2.697.684-4.636 2.063-5.938c1.28-1.21 3.37-1.9 6.343-2zM13 16a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm6 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2z"/></svg>
+                        <img src="./src/images/profile.jpg" class="z-20 absolute" height="100%" width="100%" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-xl sm:text-2xl text-blue-300">Abdul Mutaal Khan<!-- (Bakhshi) --></h1>
+                        <p class="text-md sm:text-lg text-gray-300">Front-end Web Developer</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section -->
+            <section class=" w-full my-6">
+                <div class="py-3">
+                    <h1 class="text-xl text-blue-400">ABOUT</h1>
+                </div>
+                <div class="mt-3">
+                    <p>
+                        Hi,<br >
+                        I am Mutaal Khan. Specialized in front-end web development, UI & UX Designer and going for React,
+                        React Native and W3*.
+                    </p>
+                    <p class="mt-5">Currently focusing only on CXXXXO<!-- and plan B -->. <span class="text-xs">[2022 - PRESENT]</span></p>
+                </div>
+            </section>
+            <!-- Section -->
+            <section class="w-full my-6">
+                <div class="py-3">
+                    <h1 class="text-xl text-blue-400">SKILL SET</h1>
+                </div>
+                <div class="mt-3">
+                    <h2 class="text-lg text-green-400">Frontend Web Development</h2>
+                    <p class="w-full bg-blue-400">
+                        <ul class="mt-2 ml-6 list-disc list-inside">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <ul class="ml-6 list-inside">
+                                <li>- &nbsp; SCSS</li>
+                                <li>- &nbsp; Tailwind CSS</li>
+                                <li>- &nbsp; Bootstrap</li>
+                            </ul>
+                            <li class="mt-3">JavaScript</li>
+                            <ul class="ml-6 list-inside">
+                                <li>- &nbsp; React</li>
+                                <!-- <li>- &nbsp; React Native</li>
+                                <li>- &nbsp; Vue.js</li> -->
+                            </ul>
+                        </ul>
+                        <h2 class="text-lg text-pink-500 mt-5" style="color: rgb(255, 0, 150)">UI & UX Design</h2>
+                        <p class="w-full bg-blue-400">
+                            <ul class="mt-2 ml-6 list-disc list-inside">
+                                <li>Figma</li>
+                                <li>Adobe XD</li>
+                                <li>Adobe illustrator</li>
+                            </ul>
+                        </p>
+                    </p>
+                </div>
+            </section>
+            <!-- Section -->
+            <section class="w-full my-6">
+                <div class="py-3">
+                    <h1 class="text-xl text-blue-400">PUBLISHED LIBRARIES & COMPONENTS</h1>
+                </div>
+                <div class="mt-3">
+                    <!-- Libraries -->
+                    <div class="my-10 flex flex-col sm:flex-row gap-5">
+                        <div class="w-3/12">
+                            <h2 class="text-lg text-yellow-400 mt-0">Libraries</h2>
+                        </div>
+                        <div class="w-9/12">
+                            <div class="mb-5">
+                                <h3>
+                                    <a href="https://github.com/mutaal-khan/parrot-notify-js" class="text-md text-gray-300 hover:text-yellow-400 underline flex items-center gap-1" target="_blank" rel="noopener">
+                                        Parrot Notify JS 
+                                        <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6 7c0 .55.45 1 1 1h7.59l-8.88 8.88a.996.996 0 1 0 1.41 1.41L16 9.41V17c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1z"/></svg>
+                                    </a>
+                                </h3>
+                                <p class="w-full mt-2">Simple and fully customizable! A notification and toast JavaScript library with Tailwind CSS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Components -->
+                    <div class="my-10 flex flex-col sm:flex-row gap-5">
+                        <div class="w-3/12">
+                            <h2 class="text-lg text-purple-400 mt-0">Components</h2>
+                        </div>
+                        <div class="w-9/12">
+                            <div class="mb-5">
+                                <h3>
+                                    <a href="https://github.com/mutaal-khan/parrot-tailwind" class="text-md text-gray-300 hover:text-purple-400 underline flex items-center gap-1" target="_blank" rel="noopener">
+                                        Parrot Tailwind
+                                        <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6 7c0 .55.45 1 1 1h7.59l-8.88 8.88a.996.996 0 1 0 1.41 1.41L16 9.41V17c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1z"/></svg>
+                                    </a>
+                                </h3>
+                                <p class="w-full mt-2">Designing and creating elements by Tailwind CSS is pretty flexible, using Parrot Tailwind CSS Components helps more. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contributions -->
+                    <!-- <div class="my-10 flex flex-col sm:flex-row gap-5">
+                        <div class="w-3/12">
+                            <h2 class="text-lg text-green-400 mt-0">Contributions</h2>
+                        </div>
+                        <div class="w-9/12">
+                            <div class="mb-5">
+                                <h3 class="text-md text-gray-300 underline mt-0.5">Project Name</h3>
+                                <p class="w-full mt-2">Description....</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <!-- Section -->
+            <section class="w-full my-6">
+                <div class="py-3">
+                    <h1 class="text-xl text-blue-400">PORTFOLIO</h1>
+                </div>
+                <div class="mt-3">
+                    <div class="mb-10 flex flex-col sm:flex-row gap-5">
+                        <div class="w-3/12">
+                            <p class="text-sm mt-2">21 July, 2023</p>
+                        </div>
+                        <div class="w-9/12">
+                                <h2 class="text-lg">
+                                    <a href="https://mutaal-khan.github.io/xE/" class="text-gray-300 hover:text-blue-400 underline mt-0.5 flex items-center gap-1" target="_blank" rel="noopener">
+                                        Matrix Encryption 
+                                        <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6 7c0 .55.45 1 1 1h7.59l-8.88 8.88a.996.996 0 1 0 1.41 1.41L16 9.41V17c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1z"/></svg>
+                                    </a>
+                                </h2>
+                            <p class="w-full mt-2">Plain text encryption and data decryption using AES<!-- by CryptoJS-->. Access the data in a PDF and ZIP file that can be encrypted for more privacy.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="my-10 flex flex-col sm:flex-row gap-5">
+                        <div class="w-3/12">
+                            <p class="text-sm mt-2">Date</p>
+                        </div>
+                        <div class="w-9/12">
+                            <h2 class="text-lg">
+                                <a href="" class="text-gray-300 hover:text-gray-200 underline mt-0.5 flex items-center gap-1" target="_blank" rel="noopener">
+                                    Poster Templates 
+                                    <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6 7c0 .55.45 1 1 1h7.59l-8.88 8.88a.996.996 0 1 0 1.41 1.41L16 9.41V17c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1z"/></svg>
+                                </a>
+                            </h2>
+                            <p class="w-full mt-2">Description</p>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="my-10 flex flex-col sm:flex-row gap-5">
+                        <div class="w-3/12">
+                            <p class="text-sm mt-2">Date</p>
+                        </div>
+                        <div class="w-9/12">
+                            <h2 class="text-lg">
+                                <a href="" class="text-gray-300 hover:text-gray-200 underline mt-0.5 flex items-center gap-1" target="_blank" rel="noopener">
+                                    ASCII Archieve
+                                    <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6 7c0 .55.45 1 1 1h7.59l-8.88 8.88a.996.996 0 1 0 1.41 1.41L16 9.41V17c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1z"/></svg>
+                                </a>
+                            </h2>
+                            <p class="w-full mt-2">Description</p>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!--
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+        >  |    Footer                                                                                                               v1.0.0
+        >> -------------------------------------------------------------------------------------------------------------------------------- <<
+     -->
+
+    <footer class="mt-10 flex flex-col justify-start items-center">
+        <div class="container max-w-3xl px-5 flex flex-col justify-center items-center flex-no-wrap">
+            <section class="w-full">
+                <h1 class="text-xl text-blue-400">CONTACT</h1>
+                <div class="mt-3 text-sm">
+                    <!-- <div class="flex flex-col sm:flex-row sm:gap-5">
+                        <div class="w-3/12">
+                            <p class="text-sm mt-1">Email:</p>
+                        </div>
+                        <div class="w-9/12">
+                            <p class="w-full text-gray-300">email@gmail.com</p>
+                        </div>
+                    </div> -->
+                    <div class="my-2 flex flex-col sm:flex-row sm:gap-5">
+                        <div class="w-3/12">
+                            <p class="text-sm mt-1">Github:</p>
+                        </div>
+                        <div class="w-9/12">
+                            <p class="w-full text-gray-300">
+                                <a href="https://github.com/mutaal-khan" class="hover:underline">@mutaal-khan</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-2 flex flex-col sm:flex-row sm:gap-5">
+                        <div class="w-3/12">
+                            <p class="text-sm mt-1">Instagram:</p>
+                        </div>
+                        <div class="w-9/12">
+                            <p class="w-full text-gray-300">
+                                <a href="https://instagram.com/mutaalkhan_" class="hover:underline">@mutaalkhan_</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-2 flex flex-col sm:flex-row sm:gap-5">
+                        <div class="w-3/12">
+                            <p class="text-sm mt-1">X:</p>
+                        </div>
+                        <div class="w-9/12">
+                            <p class="w-full text-gray-300">
+                                <a href="https://x.com/mutaalkhan_" class="hover:underline">@mutaalkhan_</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full text-sm text-gray-400 py-10 mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <p>
+                    <a href="https://instagram.com/khan.believers">[KHAN]</a>
+                </p>
+                <p>2023 &copy; All RIGHTS RESERVED</p>
+            </section>
+            <!-- <div class="w-full mb-10 flex items-center flex-no-wrap gap-2">
+                <div class="w-full"></div>
+                <div class="w-full"></div>
+                <div class="w-full"></div>
+                <div class="w-full border-t border-gray-800"></div>
+                <div class="flex items-center justify-center text-xs tracking-widest">
+                    <p class=""><nobr>v2.0.0 · <a href="#" class=" underline">Portfolio v1.0.0</a></nobr></p>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+    <!-- JavaScripts -->
+    <script src="./src/js/morphText.js"></script>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>

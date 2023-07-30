@@ -1,0 +1,18 @@
+/* 
+    proudly done by @mutaalkhan
+    github.com/mutaal-khan/portfolio
+
+    Releases version 3.0.0
+
+    - 02:35 PM - Sunday, 30 July, 2023 - Panjshir, Afghanistan
+
+    (C) All rights reserved
+
+    [KHAN] | THE BELIEVERS ARE SUCCESSFUL
+*/
+@font-face {font-family: matrix; src: url('./fonts/matrix.ttf');}
+@font-face {font-family: pixelOperator; src: url('./fonts/pixelOperator.ttf');}
+@font-face {font-family: rainyhearts; src: url('./fonts/rainyhearts.ttf');}
+@font-face {font-family: quicksand; src: url('./fonts/quicksand.ttf');}
+
+body {font-family: quicksand; letter-spacing: 1px;}
